@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Registration Form</title>
+    <meta
+      name="description"
+      content="A user registration form with client-side validation."
+    />
+    <meta name="author" content="Oh!Koa" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form method="post">
+      <div class="form-container">
+        <ul class="input-fields">
+          <li>
+            <label for="username" class="sr-only">USERNAME</label>
+            <input type="text" placeholder="USERNAME" id="username" />
+            <p class="error" id="username-error"></p>
+          </li>
+          <li>
+            <label for="email" class="sr-only">EMAIL</label>
+            <input type="text" placeholder="EMAIL" id="email" />
+            <p class="error" id="email-error"></p>
+          </li>
+          <li>
+            <label for="password" class="sr-only">PASSWORD</label>
+            <input type="password" placeholder="PASSWORD" id="password" />
+            <p class="error" id="password-error"></p>
+          </li>
+          <li>
+            <label for="confirm-password" class="sr-only"
+              >CONFIRM PASSWORD</label
+            >
+            <input
+              type="password"
+              placeholder="CONFIRM PASSWORD"
+              id="confirm-password"
+            />
+            <p class="error last" id="confirm-password-error"></p>
+          </li>
+        </ul>
+        <div class="led-container">
+          <div class="led-row" id="username-leds">
+            <div class="led-green led"></div>
+            <div class="led-red led"></div>
+          </div>
+          <div class="led-row" id="email-leds">
+            <div class="led-green led"></div>
+            <div class="led-red led"></div>
+          </div>
+          <div class="led-row" id="password-leds">
+            <div class="led-green led"></div>
+            <div class="led-red led"></div>
+          </div>
+          <div class="led-row" id="confirm-password-leds">
+            <div class="led-green led"></div>
+            <div class="led-red led"></div>
+          </div>
+        </div>
+      </div>
+      <button id="submit">submit</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>

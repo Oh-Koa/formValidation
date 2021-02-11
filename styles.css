@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+
+:root {
+  /* font-size: 16px; */
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #101;
+  font-family: "VT323", monospace;
+}
+
+form {
+  padding: 0.8em;
+  border-radius: 1em 0;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  border: outset 0.2em #292929;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container > ul {
+  list-style: none;
+  border-radius: 0.5em 0;
+  border: inset 0.2em #292929;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #102;
+}
+
+input {
+  background: #000;
+  color: #fff;
+  padding: 0.2em;
+  border: solid #50c 2px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border: solid 2px #a2f;
+  box-shadow: 0 0 8px 2px #a2f, inset 0 0 8px 2px #a2f;
+}
+
+.error {
+  color: #f00;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-shadow: #f00 0 0 9px;
+  background: #200;
+  width: 25.5em;
+  height: 2.3em;
+}
+
+.error.last {
+  margin: 0;
+}
+
+.led-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0 0.5em 0.5em;
+  height: 12.85em;
+}
+
+.led-row {
+  height: 2.4em;
+}
+
+.led {
+  border-radius: 1em;
+  width: 0.6em;
+  height: 0.6em;
+}
+
+.led-green {
+  background: rgba(0, 78, 9, 0.7);
+  box-shadow: inset 0 0 10px #000;
+  margin-bottom: 0.2em;
+}
+
+.led-green.active {
+  background: rgba(104, 255, 0, 0.7);
+  box-shadow: 0 0 8px 2px #af0, inset 0 0 8px 2px #af0;
+}
+
+.led-red {
+  background: rgba(130, 14, 14, 0.7);
+  box-shadow: inset 0 0 10px #000;
+}
+
+.led-red.active {
+  background: rgba(255, 0, 0, 0.7);
+  box-shadow: 0 0 8px 2px #f30, inset 0 0 8px 2px #f30;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+button {
+  margin-top: 0.5em;
+  background: #111;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #555;
+  text-shadow: none;
+  transition: color 1s, text-shadow 1s, box-shadow 1s;
+}
+
+button.enabled {
+  color: #fff;
+  text-shadow: #fff 0 0 10px;
+}
+
+button.enabled:focus {
+  outline: none;
+  text-shadow: #fff 0 0 15px;
+  box-shadow: 0 0 8px 2px #fff;
+}
