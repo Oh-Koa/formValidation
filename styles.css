@@ -2,7 +2,7 @@
 @import url("https://necolas.github.io/normalize.css/latest/normalize.css");
 
 :root {
-  /* font-size: 16px; */
+  font-size: 16px;
 }
 * {
   margin: 0;
@@ -68,10 +68,10 @@ input:focus {
   color: #f00;
   margin-bottom: 1em;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-shadow: #f00 0 0 9px;
   background: #200;
-  width: 25.5em;
+  width: 20.15em;
   height: 2.3em;
 }
 
@@ -84,12 +84,12 @@ input:focus {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 0 0.5em 0.5em;
-  height: 12.85em;
+  padding: 0.5em 0 0.8em 0.5em;
+  height: 13em;
 }
 
 .led-row {
-  height: 2.4em;
+  height: 2.2em;
 }
 
 .led {
